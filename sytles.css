@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5fafd;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+header {
+  background: #f5fafd;
+  padding: 40px 0 0 0;
+}
+
+.container.nav {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+.logo {
+  max-height: 80px;
+  width: auto;
+}
+
+header nav {
+  margin-top: 7px;
+}
+header nav a {
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: color .2s;
+}
+header nav a:hover {
+  color: #60bcf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 0 40px 0;
+  background: #f5fafd;
+}
+
+.hero h1 {
+  color: #90d4ff;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-bottom: 17px;
+}
+
+.subhead {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 54px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 52px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: #e8f2fc;
+  border-radius: 16px;
+  font-size: 2rem;
+}
+.stat-icon.blue {
+  background: #e8f2fc;
+  color: #208be3;
+}
+.stat-icon.red {
+  background: #fde3e9;
+  color: #fa4778;
+}
+
+.stat-title {
+  font-weight: 700;
+  font-size: 1.07rem;
+  color: #222;
+}
+
+.supporting {
+  background: #fff;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1.14rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .container.nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 15px;
+  }
+  .stats-row {
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
